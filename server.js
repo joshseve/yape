@@ -14,10 +14,16 @@ const format = morganjson({
   'response-time': ':response-time ms'
 });
 
+const path = require("path");
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(morgan(format));
+
+app.use('/static', express.static(path.join(__dirname,'node_modules')));
+app.use('/static', express.static(__dirname + '/src'));
+app.use('/data', express.static(__dirname + '/data'));
 
 let router = express.Router();
 
