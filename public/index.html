@@ -3,13 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>YAPE S6</title>
-    <link rel="stylesheet" type="text/css" href="/static/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body>
-    <h1>Probando Yape </h1>
 
-   <script src="/static/jquery/dist/jquery.min.js"></script>
-   <script src="/static/materialize-css/dist/js/materialize.min.js"></script>
-   <script src="/static/js/app.js"></script>
+  <body>
+
+    <section id="carousel" class="container">
+        <div class="carousel carousel-slider center row" data-indicators="true">
+           <div class="carousel-item col s12" href="#one!">
+             <img class="imagenCarousel" src="static/assets/img/icons/icon-people.png" alt="Amigos">
+             <h2><strong>Paga a tus amigos</strong></h2>
+             <p>Paga a quién quieras desde donde quieras, sin usar efectivo.</p>
+           </div>
+
+           <div class="carousel-item col s12" href="#two!">
+             <img class="imagenCarousel" src="static/assets/img/icons/happy-person.png" alt="contactos">
+             <h2><strong>Sin número de cuenta</strong></h2>
+             <p class="white-text">Elige a quién pagar desde tu lista de contactos.</p>
+           </div>
+
+           <div class="carousel-item col s12" href="#three!">
+             <img class="imagenCarousel "src="static/assets/img/icons/group-people.png" alt="seguro">
+             <h2><strong>Gratis y seguro</strong></h2>
+             <p class="white-text">La transferencia es inmediata y gratuita de una cuenta a otra.</p>
+           </div>
+         </div>
+
+         <div class="carousel-fixed-item center col s12">
+           <a class="btn btn-large waves-effect boton-amarullo white-text darken-text-2 col s12">REGISTRARME</a>
+         </div>
+        </section>
+
+        <script src="static/jquery/dist/jquery.min.js"></script>
+    		<script src="static/materialize-css/dist/js/materialize.min.js"></script>
+    		<script src="static/assets/js/main.js"></script>
   </body>
 </html>
