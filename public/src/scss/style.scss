@@ -1,6 +1,7 @@
 @import 'variables'; //Importo  del archivo de variables para aplicar estilos.
 @import 'mixin'; //Aun no lo ocupo
 
+// index
 .boton-amarillo{
 	background-color: $amarillo-botones;
 }
@@ -8,10 +9,11 @@
 .texto-letra{
 	color: $gris-letra-soft;
 }
+
 .icons-img{
-	width:
-		15%;
+	width: 15%;
 }
+
 .carousel{
 	height:900px !important;
 }
@@ -19,6 +21,12 @@
 .carousel-slider .indicators .indicator-item.active{
 	background-color:$rojo-bullet;
 }
+
 .carousel-slider .indicators .indicator-item{
 	background-color:rgba(246,68,81,0.29);
+}
+
+.text-morado{
+	color: $morado-entrada-numero;
+	font-weight: 800;
 }
